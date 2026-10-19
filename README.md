@@ -10,6 +10,8 @@ mutual-learning or CFR variant; CFR is not distinguishable from hard-example min
 zero-shot AI-edited and AI-generated images. Start with `NEXT.md` (live handover), then `NEXT_PHASE_RESULTS.md` (latest findings), then `reports/14_final_feasibility_verdict.md`.
 A follow-up retraining on a harder benchmark (`forge2`) was stopped after 1 of 36 runs; `NEXT.md` says how to resume it.
 
+**To run it yourself, follow `docs/RUN_GUIDE.md` (step by step, with the expected output of each step).**
+
 ## Layout
 
 | path | what |

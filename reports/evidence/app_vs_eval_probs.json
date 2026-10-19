@@ -1,0 +1,19 @@
+{
+ "run": "runs/cfr_adaptive_s0",
+ "n": 500,
+ "fused": {
+  "max_abs_diff": 0.005783498287200928,
+  "mean_abs_diff": 0.00031401639431715014,
+  "label_flips_at_0.5": 0
+ },
+ "A": {
+  "max_abs_diff": 0.011566996574401855,
+  "mean_abs_diff": 0.0006258102059364318,
+  "label_flips_at_0.5": 0
+ },
+ "B": {
+  "max_abs_diff": 0.0009398609399795532,
+  "mean_abs_diff": 1.1309757828712464e-05,
+  "label_flips_at_0.5": 0
+ }
+}

@@ -1,0 +1,12 @@
+# Pinned to what .venv actually contains (see tools/seed_venv_from_local.py for why).
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch==2.10.0
+torchvision==0.25.0
+numpy==2.4.2
+scipy==1.17.0
+scikit-learn==1.8.0
+pillow==12.1.0
+opencv-python-headless==4.13.0.92
+pandas==2.3.3
+pyyaml==6.0.3
+pytest

@@ -1,0 +1,31 @@
+.venv/
+__pycache__/
+.pytest_cache/
+logs/
+outputs/
+reference/
+
+# checkpoints are about 20 MB each; one is kept for a demo
+runs*/*/best.pt
+!runs/cfr_adaptive_s0/best.pt
+# an interrupted run that has no results
+runs_f2/ml_lam0.25_s0/
+# the two learning-rate probes from the first pass, superseded by the headline runs
+runs_lr1e-3/
+runs_lr2e-4/
+
+# datasets: images are licensed for private research use only, and the external set is not ours to redistribute.
+# Manifests and the COCO selection list are metadata and are kept.
+/data/*
+!/data/coco_raw/
+/data/coco_raw/*
+!/data/coco_raw/selection.json
+!/data/forge/
+/data/forge/*
+!/data/forge/manifest.csv
+!/data/forge_hard/
+/data/forge_hard/*
+!/data/forge_hard/manifest.csv
+!/data/forge2/
+/data/forge2/*
+!/data/forge2/manifest.csv

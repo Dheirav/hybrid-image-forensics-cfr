@@ -1,0 +1,106 @@
+{
+ "n_images": 4000,
+ "unreadable_or_missing": [],
+ "image_shapes": [
+  "(384, 384)"
+ ],
+ "mask_area_fraction": {
+  "splice": {
+   "min": 0.018154568142361112,
+   "median": 0.09691026475694445,
+   "max": 0.2714165581597222,
+   "n": 859
+  },
+  "copy_move": {
+   "min": 0.017076280381944444,
+   "median": 0.09712388780381945,
+   "max": 0.2692599826388889,
+   "n": 858
+  },
+  "removal": {
+   "min": 0.03561740451388889,
+   "median": 0.11547173394097222,
+   "max": 0.22733561197916666,
+   "n": 283
+  }
+ },
+ "empty_masks": 0,
+ "authentic_with_mask": 0,
+ "source_overlap_between_splits": {
+  "ood_removal&test": 0,
+  "ood_removal&train": 0,
+  "ood_removal&val": 0,
+  "test&train": 0,
+  "test&val": 0,
+  "train&val": 0
+ },
+ "splice_donor_in_other_split": 0,
+ "sources_not_exactly_one_authentic_one_manipulated": 0,
+ "counts": {
+  "ood_removal/authentic": 200,
+  "ood_removal/removal": 200,
+  "test/authentic": 250,
+  "test/copy_move": 83,
+  "test/removal": 83,
+  "test/splice": 84,
+  "train/authentic": 1300,
+  "train/copy_move": 650,
+  "train/splice": 650,
+  "val/authentic": 250,
+  "val/copy_move": 125,
+  "val/splice": 125
+ },
+ "class_balance_by_split": {
+  "ood_removal": 0.5,
+  "test": 0.5,
+  "train": 0.5,
+  "val": 0.5
+ },
+ "near_duplicate_pairs_across_splits_hamming_le_6": 0,
+ "near_duplicate_pairs_within_splits_hamming_le_6": 0,
+ "mask_alignment": {
+  "splice": {
+   "frac_changed_inside_mask": 0.9003477502498817,
+   "frac_changed_far_outside_mask": 0.0011976259149786624,
+   "mean_diff_inside": 101.58437714790091,
+   "mean_diff_far_outside": 3.6562744466892676,
+   "images_with_>1pct_change_far_outside": 19
+  },
+  "copy_move": {
+   "frac_changed_inside_mask": 0.8362252881228257,
+   "frac_changed_far_outside_mask": 0.0011416028706710203,
+   "mean_diff_inside": 93.34940604011626,
+   "mean_diff_far_outside": 3.49421151132434,
+   "images_with_>1pct_change_far_outside": 11
+  },
+  "removal": {
+   "frac_changed_inside_mask": 0.6964403426580886,
+   "frac_changed_far_outside_mask": 0.001205518759848393,
+   "mean_diff_inside": 72.91363406666407,
+   "mean_diff_far_outside": 3.7969244809926415,
+   "images_with_>1pct_change_far_outside": 5
+  }
+ },
+ "jpeg_quality_by_class": {
+  "75": {
+   "0": 676,
+   "1": 647
+  },
+  "85": {
+   "0": 668,
+   "1": 654
+  },
+  "95": {
+   "0": 656,
+   "1": 699
+  }
+ },
+ "jpeg_quality_vs_label_chi2_p": 0.34155171547887925,
+ "shortcut_metadata_only_val_auroc": 0.547184,
+ "shortcut_jpeg_quality_only_val_auroc": 0.51728,
+ "patch32_outside_mask_val_auroc_patch": 0.5012746666666668,
+ "patch32_outside_mask_val_auroc_image": 0.504768,
+ "patch32_inside_mask_val_auroc_patch": 0.7500983519404573,
+ "patch32_inside_mask_val_auroc_image": 0.8323265306122449,
+ "note": "'outside' = manipulated-image patches taken >=15 px from the mask vs authentic patches; should sit near 0.5 if the only difference is the edit. 'inside' is a positive control."
+}
